@@ -2,8 +2,32 @@
     background: #FFFFFF;
     padding: 15px 70px ;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-     border-radius: 30px;
+    border-radius: 30px;
 }
 .color-text{
-    color: #000;
+    font-family: cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.025em;
+color: #000000;
+}
+.subtitulo{
+    margin-top: -25px;
+}
+.color-text-titulo{
+font-family: cursive;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 46px;
+text-align: center;
+
+color: #1C1939;
+
+}
+.button-login{
+    width: 200px !important;
 }

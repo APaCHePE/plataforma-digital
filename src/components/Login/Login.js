@@ -7,20 +7,23 @@ import './Login.scss';
 export const Login = () => {
     return (
         <>
-        <div>
-            <div className="color-de-fondo">
-                <h3 className="color-text">SAVE</h3>
-                <h6 className="color-text">Servicio de atención vecinal</h6>
-                <h6 className="color-text">Usuario</h6>
-                <Input id="component-simple" />
-                <h6 className="color-text">Contraseña</h6>
-                <Input id="component-simple" />
-                <br/><br/>
-                <Button variant="contained" color="primary">
-                Ingresar
-            </Button> 
+            <div>
+                <img src="https://www.miraflores.gob.pe/modulos/intranet/dist/logomuniwhite.png?d9153b5383f7b03e9060a26be639f28f" />
+                <div className="color-de-fondo">
+                    <p className="color-text-titulo">SAVE</p>
+                    <h6 className="color-text subtitulo">Servicio de atención vecinal</h6>
+                    <Input placeholder="Usuario" id="component-simple" />
+                    <br /><br />
+                    <Input placeholder="Contraseña" type="password" id="component-simple" />
+                    <br /><br />
+                    <Button
+                        className="button-login" 
+                        variant="contained" 
+                        color="primary">
+                        Ingresar
+                    </Button>
+                </div>
             </div>
-        </div>
-    </>
+        </>
     )
 }
