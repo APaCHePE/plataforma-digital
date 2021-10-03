@@ -9,24 +9,18 @@ import './App.scss';
 
 function App() {
   return (
+    <div className="bodyApp">
     <Router>
-
       <Switch>
-
         <Route path="/" exact>
           <Login />
         </Route>
         <Route path="/register" >
           <RegistroSave />
         </Route>
-
       </Switch>
-
-
     </Router>
-
-
-
+    </div>
   );
 }
 
