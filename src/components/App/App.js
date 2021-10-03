@@ -1,15 +1,32 @@
-import './App.scss';
-import { Login } from '../Login/Login'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import { Login } from '../Login/Login';
 import { RegistroSave } from '../RegistroSave/RegistroSave';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Login></Login>
-        {/* <RegistroSave></RegistroSave> */}
-      </header>
-    </div>
+    <Router>
+
+      <Switch>
+
+        <Route path="/" exact>
+          <Login />
+        </Route>
+        <Route path="/register" >
+          <RegistroSave />
+        </Route>
+
+      </Switch>
+
+
+    </Router>
+
+
+
   );
 }
 
