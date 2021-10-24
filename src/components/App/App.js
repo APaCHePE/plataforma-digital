@@ -7,10 +7,11 @@ import { Login } from '../Login/Login';
 import { RegistroSave } from '../RegistroSave/RegistroSave';
 import './App.scss';
 import Rutas from '../router/Router'
+import logo from '../../assets/images/logo.svg';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -24,8 +25,8 @@ function App() {
           Learn React
         </a>
       </header>
-      <Rutas />
-    {/* <div className="bodyApp">
+      <Rutas /> */}
+    {/* <div className="bodyApp"> */}
     <Router>
       <Switch>
         <Route path="/" exact>
@@ -35,7 +36,7 @@ function App() {
           <RegistroSave />
         </Route>
       </Switch>
-    </Router> */}
+    </Router>
     </div>
   );
 }
