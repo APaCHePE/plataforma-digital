@@ -1,4 +1,10 @@
-import logo from '../../assets/images/logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import { Login } from '../Login/Login';
+import { RegistroSave } from '../RegistroSave/RegistroSave';
 import './App.scss';
 import Rutas from '../router/Router'
 function App() {
@@ -19,6 +25,17 @@ function App() {
         </a>
       </header>
       <Rutas />
+    {/* <div className="bodyApp">
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <Login />
+        </Route>
+        <Route path="/register" >
+          <RegistroSave />
+        </Route>
+      </Switch>
+    </Router> */}
     </div>
   );
 }
