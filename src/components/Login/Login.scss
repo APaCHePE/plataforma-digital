@@ -1,83 +1,89 @@
-
 .App-header img {
   margin-bottom: 1.5rem;
 }
 
-
-.color-de-fondo{
-    background: #FFFFFF;
-    padding: 15px 70px ;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    padding-bottom: 3.5rem;
+.color-de-fondo {
+  background: #ffffff;
+  padding: 35px 90px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 30rem;
+  // padding-bottom: 3.5rem;
+  p {
+    color: #000000;
+    font-style: normal;
+    font-size: 18px;
+  }
+  .color-text-titulo {
+    font-size: 35px;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: -0.005em;
+  }
+  .color-text-subtitulo {
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 1.6rem;
+    letter-spacing: -0.025em;
+  }
+  .item_login {
+    text-align: initial;
+    margin-bottom: 1.5rem;
+    div {
+      width: 100%;
+      div {
+        // background-color: red;
+        border-radius: 25px;
+      }
+    }
+  }
 }
-.color-text{
-    font-family: cursive;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-letter-spacing: -0.025em;
-color: #000000;
-}
-.subtitulo{
-    margin-top: -25px;
-}
-.color-text-titulo{
-font-family: cursive;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
-line-height: 46px;
-text-align: center;
-
-color: #1C1939;
-
-}
-.button-login{
-    width: 200px !important;
+.button-login {
+  width: 200px;
+  border-radius: 25px !important;
+  padding: 1rem !important;
+  margin-top: 1rem !important;
 }
 
 .App {
-    text-align: center;
-  }
+  text-align: center;
+}
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
   }
+}
 
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
+.MuiToolbar-regular {
+  background-color: #f8f9fa;
+}
 
-  .MuiToolbar-regular {
-    background-color: #F8F9FA;
-  }
+.App-header {
+  background-color: #376fdc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #376fdc;
+}
 
-  .App-header {
-    background-color: #376FDC;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: #376FDC;
-  }
+.App-link {
+  color: #61dafb;
+}
 
-  .App-link {
-    color: #61dafb;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
